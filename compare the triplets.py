@@ -5,7 +5,7 @@ import re
 import sys
 
 # Complete the compareTriplets function below.
-def compareTriplets(a, b):
+def compareTriplets(a,b):
     s=0
     d=0
     for i in range(len(a)):
@@ -13,7 +13,7 @@ def compareTriplets(a, b):
             s+=1
         elif a[i]<b[i]:
             d+=1
-    return (s , d)            
+    return (s,d)            
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
