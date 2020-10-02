@@ -5,14 +5,14 @@
 
 # Prints all triplets in 
 # arr[] with 0 sum 
-def findTriplets(arr, n): 
+def findTriplets(arr, m): 
 
 	found = True
-	for i in range(0, n-2): 
+	for i in range(0, m-2): 
 	
-		for j in range(i+1, n-1): 
+		for j in range(i+1, m-1): 
 		
-			for k in range(j+1, n): 
+			for k in range(j+1, m): 
 			
 				if (arr[i] + arr[j] + arr[k] == 0): 
 					print(arr[i], arr[j], arr[k]) 
@@ -26,6 +26,6 @@ def findTriplets(arr, n):
 
 # Driver code 
 arr = [0, -1, 2, -3, 1] 
-n = len(arr) 
-findTriplets(arr, n) 
+m= len(arr) 
+findTriplets(arr, m) 
 	 
